@@ -1,4 +1,4 @@
-%% Beginning of Assignment 2
+%% Beginning of Assignment 1
 clear
 close all
 
@@ -14,7 +14,7 @@ Wb = 5;
     for i = 1:nx
         for j = 1:ny
             cMap(i, j) = 1;
-            if i >= (nx/2 - Lb) && i <= (nx/2 + Lb) && (j >= (ny/2 + Wb) || j <= (ny/2 - Wb))
+            if i >= (nx/2 - Lb) && i <= (nx/2 + Lb) && j >= (nx/2 + Lb)
                 cMap(i, j)= 1e-2;
             end
         end
